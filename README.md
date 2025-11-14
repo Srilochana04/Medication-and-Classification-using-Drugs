@@ -1,96 +1,163 @@
 # Medication-and-Classification-using-Drugs
 This project focuses on building a system for medication analysis and drug classification using machine learning and structured drug-related datasets. The goal is to assist researchers, healthcare students, and developers in understanding how medications can be categorized based on their attributes, effects, and clinical properties.
 
-Project Overview
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Classification using Machine Learning & Tkinter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef7ff;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.7;
+        }
+        h1, h2, h3 {
+            color: #045c8c;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        }
+        code, pre {
+            background: #f4f4f4;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: gray;
+        }
+    </style>
+</head>
 
-This application uses a drug dataset (drug2002.csv) and performs preprocessing, scaling, and classification to predict the correct drug type.
-A Tkinter-based graphical interface makes it easy for users to enter patient details and get instant predictions.
+<body>
 
-✔ Key Features
+<div class="container">
+    <h1>🧪 Drug Classification using Machine Learning & Tkinter GUI</h1>
+    <p>
+        This project is a <strong>Drug Classification System</strong> built using 
+        <strong>Python</strong>, <strong>Tkinter</strong>, and a 
+        <strong>K-Nearest Neighbors (KNN) machine learning model</strong>.
+        It allows users to input patient information and predicts the appropriate drug class.
+    </p>
 
-Machine Learning classification using KNN algorithm
+    <hr>
 
-Clean Tkinter GUI
+    <h2>🚀 Project Overview</h2>
+    <p>
+        The program uses the <strong>drug2002.csv</strong> dataset and performs preprocessing, 
+        encoding, scaling, and classification. A user-friendly <strong>Tkinter GUI</strong> 
+        lets users enter their details and get instant predictions.
+    </p>
 
-Inputs:
+    <h3>✔ Key Features</h3>
+    <ul>
+        <li>Machine Learning classification using <strong>KNN</strong> algorithm</li>
+        <li>Simple and clear <strong>Tkinter GUI</strong></li>
+        <li>Input fields:
+            <ul>
+                <li>Age</li>
+                <li>Sex</li>
+                <li>Blood Pressure (BP)</li>
+                <li>Cholesterol</li>
+                <li>Na_to_K</li>
+            </ul>
+        </li>
+        <li>Displays predicted drug class: <strong>drugA</strong>, <strong>drugB</strong>, <strong>drugC</strong>, <strong>drugX</strong>, <strong>DrugY</strong></li>
+        <li>Clear & Quit button functionality</li>
+        <li>Background image support</li>
+    </ul>
 
-Age
+    <hr>
 
-Sex
+    <h2>🛠 Technologies Used</h2>
+    <ul>
+        <li><strong>Python</strong></li>
+        <li><strong>Tkinter</strong> for GUI</li>
+        <li><strong>Pandas</strong> for data handling</li>
+        <li><strong>Scikit-learn</strong> (KNN, Train/Test Split, StandardScaler)</li>
+        <li><strong>PIL (Pillow)</strong> for image processing</li>
+    </ul>
 
-Blood Pressure (BP)
+    <hr>
 
-Cholesterol
+    <h2>📂 How It Works</h2>
+    <ol>
+        <li>Loads dataset (<strong>drug2002.csv</strong>)</li>
+        <li>Encodes categorical features (Sex, BP, Cholesterol)</li>
+        <li>Splits data into training/testing</li>
+        <li>Scales features with <strong>StandardScaler</strong></li>
+        <li>Trains a <strong>K=1 KNN model</strong></li>
+        <li>Takes user inputs from GUI</li>
+        <li>Predicts drug class</li>
+        <li>Displays results on screen</li>
+    </ol>
 
-Na_to_K (Sodium-to-Potassium ratio)
+    <hr>
 
-Displays predicted drug class:
-drugA, drugB, drugC, drugX, DrugY
+    <h2>🖼 GUI Overview</h2>
+    <p>The GUI contains:</p>
+    <ul>
+        <li>Input fields for patient details</li>
+        <li>Predict button</li>
+        <li>Clear button</li>
+        <li>Quit confirmation window</li>
+        <li>Background image (<strong>drug1.jpg</strong>)</li>
+    </ul>
 
-"Clear" and "Quit" functionality
+    <hr>
 
-Dataset preprocessing:
+    <h2>📁 Required Files</h2>
+    <ul>
+        <li><strong>drug2002.csv</strong> – Dataset</li>
+        <li><strong>drug1.jpg</strong> – Background image</li>
+        <li><strong>Main Python script</strong></li>
+    </ul>
 
-Encoding categorical variables
+    <hr>
 
-Feature scaling with StandardScaler
+    <h2>▶ Running the Program</h2>
+    <pre><code>
+python your_script_name.py
+    </code></pre>
 
-Train-test split
+    <p>Ensure the following files are in the same folder:</p>
+    <pre><code>
+drug2002.csv
+drug1.jpg
+your_script.py
+    </code></pre>
 
-Background image support for enhanced UI
+    <hr>
 
-🛠 Technologies Used
+    <h2>📌 Future Improvements</h2>
+    <ul>
+        <li>Display accuracy score</li>
+        <li>Use advanced ML models (Random Forest, SVM, etc.)</li>
+        <li>Add dropdown menus instead of text entries</li>
+        <li>Error handling for invalid inputs</li>
+    </ul>
 
-Python
+</div>
 
-Tkinter – GUI
+<footer>
+    <p>© 2024 Drug Classification Project – Machine Learning + Tkinter GUI</p>
+</footer>
 
-Pandas – Data handling
+</body>
+</html>
 
-Scikit-learn
-
-KNN Classifier
-
-Train/Test Split
-
-StandardScaler
-
-PIL (Pillow) – Image handling
-
-📂 How It Works
-
-Loads the dataset (drug2002.csv)
-
-Maps categorical text fields (Sex, BP, Cholesterol)
-
-Splits into training and testing sets
-
-Scales features using StandardScaler
-
-Trains a KNN model (k=1, Euclidean distance)
-
-Takes user input from Tkinter GUI
-
-Predicts drug category
-
-Displays the result on screen
-
-🖼 GUI Preview
-
-The interface includes:
-
-Input fields for all parameters
-
-Predict, Clear, and Quit buttons
-
-Display area for predicted drug
-
-Optional background image (drug1.jpg)
-
-📁 Files Required
-
-drug2002.csv – Dataset
-
-drug1.jpg – Background image
-
-Main Python script (your code)
